@@ -1,6 +1,6 @@
 #!/bin/bash
 
-allFiles=$(find .)
+allFiles=$(find . -name .git -prune -o -print)
 
 allLineCounts=""
 delimeter=""
